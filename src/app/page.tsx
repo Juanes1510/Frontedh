@@ -1,5 +1,12 @@
-import JobBoard from '../app/fonts/components/JobBoard'
+import Cartas from "./components/card";
+import Header from "./components/header";
+import "./globals.css";
 
 export default function Home() {
-  return <JobBoard />;
+  return (
+    <div className="w-full justify-center items-center">
+      <Header />
+      <Cartas />
+    </div>
+  )
 }
