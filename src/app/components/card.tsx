@@ -6,25 +6,45 @@ const DataProductos = [
     "descripcion": "You will be responsible for the visual design for multi-device.Understand basic design. Users Journey, ideation and Wireframing etc..."
   },
   {
-    "imagen_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5btiIDgDHjAJkMLChzsElwtwrHv3CNOka5c8moSz5J0z3hb8l",
+    "imagen_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ5LBCBDg8YsMzr16BhLJ45NohgxyFE7ujoqb9-zSeXVnnuP35s",
+    "titulo": "UI / UX Designer - Remote",
+    "descripcion": "You will be responsible for the visual design for multi-device.Understand basic design. Users Journey, ideation and Wireframing etc..."
+  },
+  { 
+    "imagen_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTohdXVPXljLMiwXkfQl8hGUtdSXfH_czS3Wr_UDWQstTTClQ8B",
     "titulo": "Lead Product Desing",
     "descripcion": "You will be responsible for the visual design for multi-device.Understand basic design. Users Journey, ideation and Wireframing etc..."
   },
   {
-    "imagen_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5btiIDgDHjAJkMLChzsElwtwrHv3CNOka5c8moSz5J0z3hb8l",
+    "imagen_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuiEfuNRNgE0iuo9NN4qAOkFsAkz2CebHPDCjQK-18EfWyVvrs",
     "titulo": "Lead Product Desing",
     "descripcion": "You will be responsible for the visual design for multi-device.Understand basic design. Users Journey, ideation and Wireframing etc..."
   },
   {
-    "imagen_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5btiIDgDHjAJkMLChzsElwtwrHv3CNOka5c8moSz5J0z3hb8l",
+    "imagen_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEVw8UqNj39UCz7KWkOntAYohs8-U0uCIVD8C7O_WvqzWpohen",
     "titulo": "Lead Product Desing",
     "descripcion": "You will be responsible for the visual design for multi-device.Understand basic design. Users Journey, ideation and Wireframing etc..."
   },
   {
-    "imagen_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5btiIDgDHjAJkMLChzsElwtwrHv3CNOka5c8moSz5J0z3hb8l",
+    "imagen_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzo1UcS5j3JQ_63dKEl4am5lVnQwOBUqH41PHAklOK1cUpF80B" ,
     "titulo": "Lead Product Desing",
     "descripcion": "You will be responsible for the visual design for multi-device.Understand basic design. Users Journey, ideation and Wireframing etc..."
-  }
+  },
+  {
+    "imagen_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSEf3BHGTs-wfWVur-C3erAFYnAKntiiGPOrYmJDBJ4a8NSUeYY" ,
+    "titulo": "Lead Product Desing",
+    "descripcion": "You will be responsible for the visual design for multi-device.Understand basic design. Users Journey, ideation and Wireframing etc..."
+  },
+  {
+    "imagen_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTTNoAgiu5vJsynDE21mnhHRGv0d5iKeegRpX-40snIyMXF-MnW" ,
+    "titulo": "Lead Product Desing",
+    "descripcion": "You will be responsible for the visual design for multi-device.Understand basic design. Users Journey, ideation and Wireframing etc..."
+  },
+  {
+    "imagen_url": "https://cdn-icons-png.flaticon.com/512/124/124037.png",
+    "titulo": "Lead Product Desing",
+    "descripcion": "You will be responsible for the visual design for multi-device.Understand basic design. Users Journey, ideation and Wireframing etc..."
+  },
 ]
 export default function Cartas() {
   return (
@@ -82,7 +102,8 @@ export default function Cartas() {
 
         {/* <div className="max-w-sm rounded overflow-hidden shadow-lg bg-white p-4">
           <img className="rounded-lg p-2 h-20 w-20"
-            src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ5LBCBDg8YsMzr16BhLJ45NohgxyFE7ujoqb9-zSeXVnnuP35s" alt="icon2" />
+           
+2              src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ5LBCBDg8YsMzr16BhLJ45NohgxyFE7ujoqb9-zSeXVnnuP35s" alt="icon2" />
           <div className="px-4 py-4">
             <div className="font-bold text-xl mb-2">UI / UX Designer - Remote</div>
             <p className="text-gray-700 text-base">
@@ -128,7 +149,7 @@ export default function Cartas() {
 
         <div className="max-w-sm rounded overflow-hidden shadow-lg bg-white p-4">
           <img className="rounded-lg p-2 h-20 w-20"
-            src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTohdXVPXljLMiwXkfQl8hGUtdSXfH_czS3Wr_UDWQstTTClQ8B" alt="icon3" />
+ 3           src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTohdXVPXljLMiwXkfQl8hGUtdSXfH_czS3Wr_UDWQstTTClQ8B" alt="icon3" />
           <div className="px-4 py-4">
             <div className="font-bold text-xl mb-2">Lead Product Desing</div>
             <p className="text-gray-700 text-base">
@@ -174,7 +195,7 @@ export default function Cartas() {
 
         <div className="max-w-sm rounded overflow-hidden shadow-lg bg-white p-4">
           <img className="rounded-lg p-2 h-20 w-20"
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuiEfuNRNgE0iuo9NN4qAOkFsAkz2CebHPDCjQK-18EfWyVvrs" alt="icon4" />
+ 4           src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuiEfuNRNgE0iuo9NN4qAOkFsAkz2CebHPDCjQK-18EfWyVvrs" alt="icon4" />
           <div className="px-4 py-4">
             <div className="font-bold text-xl mb-2">UI / UX Designer - Remote</div>
             <p className="text-gray-700 text-base">
@@ -220,7 +241,7 @@ export default function Cartas() {
 
         <div className="max-w-sm rounded overflow-hidden shadow-lg bg-white p-4">
           <img className="rounded-lg p-2 h-20 w-20"
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEVw8UqNj39UCz7KWkOntAYohs8-U0uCIVD8C7O_WvqzWpohen" alt="icon5" />
+ 4           src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEVw8UqNj39UCz7KWkOntAYohs8-U0uCIVD8C7O_WvqzWpohen" alt="icon5" />
           <div className="px-4 py-4">
             <div className="font-bold text-xl mb-2">Lead Product Desing</div>
             <p className="text-gray-700 text-base">
@@ -266,7 +287,7 @@ export default function Cartas() {
 
         <div className="max-w-sm rounded overflow-hidden shadow-lg bg-white p-4">
           <img className="rounded-lg p-2 h-20 w-20"
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzo1UcS5j3JQ_63dKEl4am5lVnQwOBUqH41PHAklOK1cUpF80B" alt="icon6" />
+ 5           src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzo1UcS5j3JQ_63dKEl4am5lVnQwOBUqH41PHAklOK1cUpF80B" alt="icon6" />
           <div className="px-4 py-4">
             <div className="font-bold text-xl mb-2">Lead Product Desing</div>
             <p className="text-gray-700 text-base">
@@ -312,7 +333,7 @@ export default function Cartas() {
 
         <div className="max-w-sm rounded overflow-hidden shadow-lg bg-white p-4">
           <img className="rounded-lg p-2 h-20 w-20"
-            src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSEf3BHGTs-wfWVur-C3erAFYnAKntiiGPOrYmJDBJ4a8NSUeYY" alt="icon7" />
+ 6           src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSEf3BHGTs-wfWVur-C3erAFYnAKntiiGPOrYmJDBJ4a8NSUeYY" alt="icon7" />
           <div className="px-4 py-4">
             <div className="font-bold text-xl mb-2">Lead Product Desing</div>
             <p className="text-gray-700 text-base">
@@ -358,7 +379,7 @@ export default function Cartas() {
 
         <div className="max-w-sm rounded overflow-hidden shadow-lg bg-white p-4">
           <img className="rounded-lg p-2 h-20 w-20"
-            src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTTNoAgiu5vJsynDE21mnhHRGv0d5iKeegRpX-40snIyMXF-MnW" alt="icon8" />
+ 7           src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTTNoAgiu5vJsynDE21mnhHRGv0d5iKeegRpX-40snIyMXF-MnW" alt="icon8" />
           <div className="px-4 py-4">
             <div className="font-bold text-xl mb-2">UI / UX Designer - Remote</div>
             <p className="text-gray-700 text-base">
@@ -404,7 +425,7 @@ export default function Cartas() {
 
         <div className="max-w-sm rounded overflow-hidden shadow-lg bg-white p-4">
           <img className="rounded-lg p-2 h-20 w-20"
-            src="https://cdn-icons-png.flaticon.com/512/124/124037.png" alt="icon9" />
+ 8         src="https://cdn-icons-png.flaticon.com/512/124/124037.png" alt="icon9" />
           <div className="px-4 py-4">
             <div className="font-bold text-xl mb-2">Lead Product Desing</div>
             <p className="text-gray-700 text-base">
