@@ -18,6 +18,7 @@ const Header = () => {
               <BriefcaseIcon className="h-5 w-5" />
               <span className="font-medium">DashBoard</span>
             </Link>
+            
             <Link href="/companies" className="flex items-center space-x-2 text-white hover:text-yellow-300 transition duration-150 ease-in-out">
               <BuildingOfficeIcon className="h-5 w-5" />
               <span className="font-medium">compañia</span>
