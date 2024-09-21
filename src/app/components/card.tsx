@@ -89,12 +89,14 @@ export default function Cartas() {
                     5 Friends Work Here</h2></div>
               </div>
               <div className="flex px-4 space-x-8">
+              <a href="https://github.com/">
                 <button className="bg-blue-600 hover:bg-blue-500 text-white font-bold py-2 px-7 rounded">
                   Apply now
-                </button>
+                </button></a>
+                <a href="https://github.com/">
                 <button className="bg-[#e2e2e2] hover:bg-[#c4c1c1] text-[#5e5c5c] font-bold py-2 px-7 rounded">
                   Messages
-                </button>
+                </button></a>
                 <a href="https://github.com/">
                 <button className="mt-4 hover:bg-[#e3e3e6] text-[#6361ba] border-[2px] border-blue-200 px-2 rounded-full">
                  <svg className="h-4 w-6" xmlns="https://img.icons8.com/?size=100&id=56304&format=png&color=000000" fill="none" viewBox="0 0 24 24" stroke="currentColor">
