@@ -1,12 +1,14 @@
 import Cartas from "./components/card";
 import Header from "./components/header";
 import "./globals.css";
+import CreateProductForm from "./components/formulario";
 
 export default function Home() {
   return (
     <div className="w-full justify-center items-center">
       <Header />
       <Cartas />
+      <CreateProductForm />
       <div className="relative min-h-screen">
       {/* Contenido de la página */}
       <h1 className="text-center text-2xl font-bold mt-10">Bienvenido a mi página</h1>
@@ -20,3 +22,5 @@ export default function Home() {
     </div>
   )
 }
+
+
