@@ -31,7 +31,7 @@ export default function Cartas() {
 
     <section className="min-h-screen bg-[#f7f7f7] p-20">
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-        {DataProductos.map((produc) => (
+        {DataProductos.map ((produc) => (
           <>
             <div className="max-w-sm rounded overflow-hidden shadow-lg bg-white p-4">
               <img className="rounded-lg p-2 h-20 w-20"
@@ -75,11 +75,12 @@ export default function Cartas() {
                 <button className="bg-[#e2e2e2] hover:bg-[#c4c1c1] text-[#5e5c5c] font-bold py-2 px-7 rounded">
                   Messages
                 </button>
+                <a href="https://github.com/">
                 <button className="mt-4 hover:bg-[#e3e3e6] text-[#6361ba] border-[2px] border-blue-200 px-2 rounded-full">
                  <svg className="h-4 w-6" xmlns="https://img.icons8.com/?size=100&id=56304&format=png&color=000000" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="6" d="M11 4h10v10M11 4l9.35 9.35-9.9 9.9H1V14.1l9.35-9.35z" />
                  </svg> 
-                </button>
+                </button></a>
               </div>
             </div>
           </>
