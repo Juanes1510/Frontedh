@@ -7,7 +7,17 @@ const DataProductos = [
   },
   {
     "imagen_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5btiIDgDHjAJkMLChzsElwtwrHv3CNOka5c8moSz5J0z3hb8l",
+    "titulo": "UI/ UX Designer-remote",
+    "descripcion": "You will be responsible for the visual design for multi-device.Understand basic design. Users Journey, ideation and Wireframing etc..."
+  },
+  {
+    "imagen_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5btiIDgDHjAJkMLChzsElwtwrHv3CNOka5c8moSz5J0z3hb8l",
     "titulo": "Lead Product Desing",
+    "descripcion": "You will be responsible for the visual design for multi-device.Understand basic design. Users Journey, ideation and Wireframing etc..."
+  },
+  {
+    "imagen_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5btiIDgDHjAJkMLChzsElwtwrHv3CNOka5c8moSz5J0z3hb8l",
+    "titulo": "UI/ UX Designer-remote",
     "descripcion": "You will be responsible for the visual design for multi-device.Understand basic design. Users Journey, ideation and Wireframing etc..."
   },
   {
@@ -18,6 +28,16 @@ const DataProductos = [
   {
     "imagen_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5btiIDgDHjAJkMLChzsElwtwrHv3CNOka5c8moSz5J0z3hb8l",
     "titulo": "Lead Product Desing",
+    "descripcion": "You will be responsible for the visual design for multi-device.Understand basic design. Users Journey, ideation and Wireframing etc..."
+  },
+  {
+    "imagen_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5btiIDgDHjAJkMLChzsElwtwrHv3CNOka5c8moSz5J0z3hb8l",
+    "titulo": "Lead Product Desing",
+    "descripcion": "You will be responsible for the visual design for multi-device.Understand basic design. Users Journey, ideation and Wireframing etc..."
+  },
+  {
+    "imagen_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5btiIDgDHjAJkMLChzsElwtwrHv3CNOka5c8moSz5J0z3hb8l",
+    "titulo": "UI/ UX Designer-remote",
     "descripcion": "You will be responsible for the visual design for multi-device.Understand basic design. Users Journey, ideation and Wireframing etc..."
   },
   {
