@@ -6,22 +6,17 @@ const DataProductos = [
     "descripcion": "You will be responsible for the visual design for multi-device.Understand basic design. Users Journey, ideation and Wireframing etc..."
   },
   {
-    "imagen_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5btiIDgDHjAJkMLChzsElwtwrHv3CNOka5c8moSz5J0z3hb8l",
-    "titulo": "UI/ UX Designer-remote",
+    "imagen_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ5LBCBDg8YsMzr16BhLJ45NohgxyFE7ujoqb9-zSeXVnnuP35s",
+    "titulo": "UI / UX Designer - Remote",
     "descripcion": "You will be responsible for the visual design for multi-device.Understand basic design. Users Journey, ideation and Wireframing etc..."
   },
-  {
-    "imagen_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5btiIDgDHjAJkMLChzsElwtwrHv3CNOka5c8moSz5J0z3hb8l",
+  { 
+    "imagen_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTohdXVPXljLMiwXkfQl8hGUtdSXfH_czS3Wr_UDWQstTTClQ8B",
     "titulo": "Lead Product Desing",
     "descripcion": "You will be responsible for the visual design for multi-device.Understand basic design. Users Journey, ideation and Wireframing etc..."
   },
   {
-    "imagen_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5btiIDgDHjAJkMLChzsElwtwrHv3CNOka5c8moSz5J0z3hb8l",
-    "titulo": "UI/ UX Designer-remote",
-    "descripcion": "You will be responsible for the visual design for multi-device.Understand basic design. Users Journey, ideation and Wireframing etc..."
-  },
-  {
-    "imagen_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5btiIDgDHjAJkMLChzsElwtwrHv3CNOka5c8moSz5J0z3hb8l",
+    "imagen_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuiEfuNRNgE0iuo9NN4qAOkFsAkz2CebHPDCjQK-18EfWyVvrs",
     "titulo": "Lead Product Desing",
     "descripcion": "You will be responsible for the visual design for multi-device.Understand basic design. Users Journey, ideation and Wireframing etc..."
   },
@@ -36,15 +31,20 @@ const DataProductos = [
     "descripcion": "You will be responsible for the visual design for multi-device.Understand basic design. Users Journey, ideation and Wireframing etc..."
   },
   {
-    "imagen_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5btiIDgDHjAJkMLChzsElwtwrHv3CNOka5c8moSz5J0z3hb8l",
-    "titulo": "UI/ UX Designer-remote",
+    "imagen_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSEf3BHGTs-wfWVur-C3erAFYnAKntiiGPOrYmJDBJ4a8NSUeYY" ,
+    "titulo": "Lead Product Desing",
     "descripcion": "You will be responsible for the visual design for multi-device.Understand basic design. Users Journey, ideation and Wireframing etc..."
   },
   {
-    "imagen_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5btiIDgDHjAJkMLChzsElwtwrHv3CNOka5c8moSz5J0z3hb8l",
+    "imagen_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTTNoAgiu5vJsynDE21mnhHRGv0d5iKeegRpX-40snIyMXF-MnW" ,
     "titulo": "Lead Product Desing",
     "descripcion": "You will be responsible for the visual design for multi-device.Understand basic design. Users Journey, ideation and Wireframing etc..."
-  }
+  },
+  {
+    "imagen_url": "https://cdn-icons-png.flaticon.com/512/124/124037.png",
+    "titulo": "Lead Product Desing",
+    "descripcion": "You will be responsible for the visual design for multi-device.Understand basic design. Users Journey, ideation and Wireframing etc..."
+  },
 ]
 export default function Cartas() {
   return (
