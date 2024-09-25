@@ -1,4 +1,4 @@
-/// esta vista la va hacer helen y daisy
+
 const DataProductos = [
   {
     "imagen_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5btiIDgDHjAJkMLChzsElwtwrHv3CNOka5c8moSz5J0z3hb8l",
@@ -56,6 +56,10 @@ export default function Cartas() {
             <div className="max-w-sm rounded overflow-hidden shadow-lg bg-white p-4">
               <img className="rounded-lg p-2 h-20 w-20"
                 src={produc.imagen_url} alt="icon1" />
+                
+                <button className="hover:bg-[#6c67f97e] text-gray-500 font-bold py-1 px-2 rounded">
+                 ...
+                </button>
               <div className="px-4 py-4">
                 <div className="font-bold text-xl mb-2">{produc.titulo}</div>
                 <p className="text-gray-700 text-base">
@@ -81,7 +85,7 @@ export default function Cartas() {
                 <img className="h-6 w-6 rounded-full border-[2px] border-gray-400 object-cover ml-[-6px]"
                   src="https://pymstatic.com/5844/conversions/personas-emocionales-wide_webp.webp" alt="Sara" />
                 <div className="flex h-6 w-6 items-center justify-center rounded-full  border-gray-400
-      bg-[#f5f2f2] object-cover ml-[-6px] text-sm text-gray-600 ">
+                   bg-[#f5f2f2] object-cover ml-[-6px] text-sm text-gray-600 ">
                   <span>+2</span>
                 </div>
                 <div className="text-center my-8">
@@ -97,23 +101,11 @@ export default function Cartas() {
                 <button className="bg-[#e2e2e2] hover:bg-[#c4c1c1] text-[#5e5c5c] font-bold py-2 px-7 rounded">
                   Messages
                 </button></a>
-                <a href="https://github.com/">
-                <button className="mt-4 hover:bg-[#e3e3e6] text-[#6361ba] border-[2px] border-blue-200 px-2 rounded-full">
-                 <svg className="h-4 w-6" xmlns="https://img.icons8.com/?size=100&id=56304&format=png&color=000000" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="6" d="M11 4h10v10M11 4l9.35 9.35-9.9 9.9H1V14.1l9.35-9.35z" />
-                 </svg> 
-                </button></a>
               </div>
             </div>
           </>
         ))}
-
-       
-
       </div>
-
-
     </section>
-
   )
 }
