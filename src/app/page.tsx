@@ -1,5 +1,4 @@
 'use client'
-
 import { useState } from 'react';
 import Cartas from "./components/card";
 import Header from "./components/header";
@@ -20,7 +19,7 @@ export default function Home() {
       <Header />
       <Cartas />
       {/* Formulario solo se mostrará si isFormVisible es true */}
-      {isFormVisible && <Formulario setIsFormVisible={setIsFormVisible} isFormVisible={isFormVisible}/>}
+      {isFormVisible && <Formulario setIsFormVisible={setIsFormVisible} isFormVisible={isFormVisible} />}
 
       <div className="relative min-h-screen">
         <h1 className="text-center text-2xl font-bold mt-10">
@@ -29,11 +28,11 @@ export default function Home() {
 
         {/* Botón flotante */}
         <button
-        onClick={toggleFormVisibility}
-        className="fixed bottom-5 right-5 bg-gradient-to-r from-purple-500 to-blue-500 text-white rounded-full w-16 h-16 text-3xl shadow-lg hover:from-purple-600 hover:to-blue-600 transition-colors duration-300">
-      
-        +
-      </button>
+          onClick={toggleFormVisibility}
+          className="fixed bottom-5 right-5 bg-gradient-to-r from-purple-500 to-blue-500 text-white rounded-full w-16 h-16 text-3xl shadow-lg hover:from-purple-600 hover:to-blue-600 transition-colors duration-300">
+
+          +
+        </button>
       </div>
     </div>
   );
