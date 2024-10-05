@@ -27,28 +27,50 @@ export default async function Login() {
         {/* Sección derecha con el formulario */}
         <div className="w-1/2 bg-white shadow-xl rounded-lg p-8">
           <form onSubmit={handleLogin} className="space-y-6">
+          <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="email">
+          Correo electrónico
+          </label>
             <input
+              id="email"
               type="email"
               placeholder="Correo electrónico o teléfono"
               className="w-full p-4 border border-gray-300 rounded focus:outline-none focus:border-purple-900"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               required
-            />
-            <input
+              />
+              </div>
+
+              <div className="mb-4">
+              <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="password">
+              Contraseña
+              </label>
+              <input
+              id="password"
               type="password"
               placeholder="Contraseña"
               className="w-full p-4 border border-gray-300 rounded focus:outline-none focus:border-purple-900"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
               required
-            />
-            <button
+              />
+              </div>
+
+              {/* Mostrar el mensaje de error si las credenciales no son válidas */}
+              {error && <p className="text-red-500 text-sm mb-4">{error}</p>}
+
+              <div className="flex justify-center">
+              <button
+              type="submit"
+              className="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 focus:outline-none"
+              >
+
+              <button
               type="submit"
               className="w-full bg-purple-700 text-white font-semibold py-3 rounded hover:bg-purple-600 transition duration-200"
-            >
+              >
               Iniciar sesión
-            </button>
+             </button>
           </form>
          
         </div>
