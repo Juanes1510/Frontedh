@@ -18,7 +18,7 @@ const Header = () => {
               <BriefcaseIcon className="h-5 w-5" />
               <span className="font-medium">DashBoard</span>
             </Link>
-            
+
             <Link href="/companies" className="flex items-center space-x-2 text-white hover:text-yellow-300 transition duration-150 ease-in-out">
               <BuildingOfficeIcon className="h-5 w-5" />
               <span className="font-medium">compañia</span>
@@ -38,10 +38,10 @@ const Header = () => {
             </button>
             <div className="flex items-center space-x-3 bg-white bg-opacity-20 rounded-full py-2 px-4">
               <div className="w-10 h-10 rounded-full overflow-hidden border-2 border-yellow-400 shadow-inner">
-                <Image 
-                  src="/halo-4-pictures-f0rwaa6dm73pmw0c.webp" 
-                  alt="Halo profile picture" 
-                  width={40} 
+                <Image
+                  src="/halo-4-pictures-f0rwaa6dm73pmw0c.webp"
+                  alt="Halo profile picture"
+                  width={40}
                   height={40}
                   className="object-cover"
                 />
