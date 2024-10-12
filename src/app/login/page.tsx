@@ -8,7 +8,7 @@ export default function Login() {
   const [error, setError] = useState('');
   const [isLoading, setIsLoading] = useState(false);
 
-  // Simulamos credenciales válidas
+  
   const VALID_EMAIL = 'usuario@ejemplo.com';
   const VALID_PASSWORD = '123456';
 
@@ -16,7 +16,7 @@ export default function Login() {
     e.preventDefault();
     setIsLoading(true);
     
-    // Validación del formato del correo
+    
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!emailRegex.test(email)) {
       setError('Por favor, ingresa un correo electrónico válido');
@@ -24,10 +24,10 @@ export default function Login() {
       return;
     }
 
-    // Simulamos una pequeña demora para mostrar el estado de carga
+    
     await new Promise(resolve => setTimeout(resolve, 1000));
 
-    // Validación de las credenciales
+    
     if (email === VALID_EMAIL && password === VALID_PASSWORD) {
       setError('');
       alert('¡Inicio de sesión exitoso!');
@@ -42,7 +42,7 @@ export default function Login() {
     <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-purple-50 to-purple-100 p-4">
       <div className="flex w-full max-w-6xl bg-white rounded-2xl shadow-2xl overflow-hidden">
         
-        {/* Sección izquierda */}
+  
         <div className="hidden md:flex md:w-1/2 bg-gradient-to-br from-purple-600 to-purple-800 p-12 flex-col justify-between relative">
           <div className="relative z-10">
             <h1 className="text-white text-6xl font-bold mb-6">JobBoard</h1>
@@ -51,13 +51,13 @@ export default function Login() {
             </p>
           </div>
           
-          {/* Decorative elements */}
+          
           <div className="absolute bottom-0 left-0 right-0 top-0 bg-gradient-to-br from-purple-500/20 to-transparent"></div>
           <div className="absolute -bottom-32 -left-32 w-96 h-96 bg-purple-500 rounded-full opacity-20"></div>
           <div className="absolute -top-32 -right-32 w-96 h-96 bg-purple-500 rounded-full opacity-20"></div>
         </div>
 
-        {/* Sección derecha - Formulario */}
+        
         <div className="w-full md:w-1/2 p-8 md:p-12 space-y-6">
           <div className="text-center mb-10">
             <h2 className="text-3xl font-bold text-gray-800 mb-2">Bienvenido de nuevo</h2>
