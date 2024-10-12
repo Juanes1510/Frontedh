@@ -8,7 +8,7 @@ export default function Login() {
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
   const router = useRouter();
- 
+
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -18,8 +18,8 @@ export default function Login() {
 
     if (email === validEmail && password === validPassword) {
       setError('');
-      alert('Inicio de sesión exitoso');
-      router.push('');
+      localStorage.setItem('token', '1141234124123')
+      router.push('/');
     } else {
       setError('Email o contraseña incorrectos');
     }
@@ -29,7 +29,7 @@ export default function Login() {
     <div className="flex min-h-screen justify-center items-center bg-gray-100">
       {/* Contenedor principal con flex para dividir el contenido */}
       <div className="flex items-center w-10/12 max-w-6xl">
-        
+
         {/* Sección izquierda con el logo y texto de Facebook, sin cuadros */}
         <div className="w-1/2 text-left pr-12">
           <h1 className="text-purple-500 text-8xl font-bold">JobBoard</h1>
@@ -42,7 +42,7 @@ export default function Login() {
         <div className="w-1/2 flex justify-center">
           <div className="bg-white p-8 rounded-lg shadow-lg w-full max-w-md">
             <h2 className="text-2xl font-bold mb-6 text-center text-purple-800">Iniciar sesión</h2>
-            
+
             <form onSubmit={handleSubmit}>
               <div className="mb-4">
                 <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="email">
@@ -88,7 +88,7 @@ export default function Login() {
             </form>
           </div>
         </div>
-     </div>
-     </div>
+      </div>
+    </div>
   );
 }
