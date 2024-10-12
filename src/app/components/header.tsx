@@ -37,7 +37,6 @@ const Header = () => {
               Search
             </button>
             <div className="flex items-center space-x-3 bg-white bg-opacity-20 rounded-full py-2 px-4">
-              <span className="text-sm font-medium">Jefe Maestro</span>
               <div className="w-10 h-10 rounded-full overflow-hidden border-2 border-yellow-400 shadow-inner">
                 <Image 
                   src="/halo-4-pictures-f0rwaa6dm73pmw0c.webp" 

@@ -34,7 +34,7 @@ export default function Login() {
         <div className="w-1/2 text-left pr-12">
           <h1 className="text-purple-500 text-8xl font-bold">JobBoard</h1>
           <p className="text-xl mt-4">
-            Conéctate con amigos y el mundo que te rodea en Facebook.
+            Conéctate con amigos y el mundo que te rodea.
           </p>
         </div>
 
