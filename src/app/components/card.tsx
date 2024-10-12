@@ -59,7 +59,7 @@ export default function Cartas() {
                 <button className="hover:text-blue-400 text-gray-500 font-bold py-1 px-4">
                  ...
                 </button>
-              <div className="px-4 py-4">
+                <div className="px-4 py-4">
                 <div className="font-bold text-xl mb-2">{produc.titulo}</div>
                 <p className="text-gray-700 text-base">
                   {produc.descripcion}

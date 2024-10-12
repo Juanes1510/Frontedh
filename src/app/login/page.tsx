@@ -3,13 +3,10 @@ import '../globals.css';
 import React, { useState } from 'react';
 
 export default function Login() {
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
-<<<<<<< HEAD
-  const [error, setError] = useState ('')
-  const handleLogin = (e: React.FormEvent) => {
-=======
-  const [error, setError] = useState('');
+  const [email, setEmail] = useState ('');
+  const [password, setPassword] = useState ('');
+  const [error, setError] = useState ('');
+
   const [isLoading, setIsLoading] = useState(false);
 
   // Simulamos credenciales válidas
@@ -17,7 +14,6 @@ export default function Login() {
   const VALID_PASSWORD = '123456';
 
   const handleLogin = async (e: React.FormEvent) => {
->>>>>>> cc3a27dd71b51961e697968a32a0044080e6c7e3
     e.preventDefault();
     setIsLoading(true);
     
@@ -70,7 +66,6 @@ export default function Login() {
           </div>
 
           <form onSubmit={handleLogin} className="space-y-6">
-<<<<<<< HEAD
            <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="email">
             Correo electrónico
            </label>
@@ -83,7 +78,6 @@ export default function Login() {
            onChange={(e) => setEmail(e.target.value)}
            required 
            />
-        </div>
 
         <div className="mb-4">
           <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="password">
@@ -117,8 +111,6 @@ export default function Login() {
          </button>
         </div>
 
-        
-=======
             {error && (
               <div className="bg-red-50 border-l-4 border-red-500 p-4 rounded-md">
                 <p className="text-red-700">{error}</p>
@@ -196,9 +188,9 @@ export default function Login() {
                 </a>
               </p>
             </div>
->>>>>>> cc3a27dd71b51961e697968a32a0044080e6c7e3
           </form>
         </div>
-    </div>
+     </div>
+     </div>
   );
 }
