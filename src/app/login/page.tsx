@@ -1,150 +1,94 @@
-'use client'
+'use client';
 import '../globals.css';
+import { useRouter } from 'next/navigation';
 import React, { useState } from 'react';
 
 export default function Login() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
-  const [isLoading, setIsLoading] = useState(false);
+  const router = useRouter();
+ 
 
-  
-  const VALID_EMAIL = 'usuario@ejemplo.com';
-  const VALID_PASSWORD = '123456';
-
-  const handleLogin = async (e: React.FormEvent) => {
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    setIsLoading(true);
-    
-    
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!emailRegex.test(email)) {
-      setError('Por favor, ingresa un correo electrónico válido');
-      setIsLoading(false);
-      return;
-    }
 
-    
-    await new Promise(resolve => setTimeout(resolve, 1000));
+    const validEmail = 'user@example.com';
+    const validPassword = '123456';
 
-    
-    if (email === VALID_EMAIL && password === VALID_PASSWORD) {
+    if (email === validEmail && password === validPassword) {
       setError('');
-      alert('¡Inicio de sesión exitoso!');
+      alert('Inicio de sesión exitoso');
+      router.push('');
     } else {
-      setError('El correo electrónico o la contraseña no coinciden');
+      setError('Email o contraseña incorrectos');
     }
-    
-    setIsLoading(false);
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-purple-50 to-purple-100 p-4">
-      <div className="flex w-full max-w-6xl bg-white rounded-2xl shadow-2xl overflow-hidden">
+    <div className="flex min-h-screen justify-center items-center bg-gray-100">
+      {/* Contenedor principal con flex para dividir el contenido */}
+      <div className="flex items-center w-10/12 max-w-6xl">
         
-  
-        <div className="hidden md:flex md:w-1/2 bg-gradient-to-br from-purple-600 to-purple-800 p-12 flex-col justify-between relative">
-          <div className="relative z-10">
-            <h1 className="text-white text-6xl font-bold mb-6">JobBoard</h1>
-            <p className="text-purple-200 text-xl leading-relaxed">
-              Encuentra las mejores oportunidades laborales y conecta con empresas líderes en el mercado.
-            </p>
-          </div>
-          
-          
-          <div className="absolute bottom-0 left-0 right-0 top-0 bg-gradient-to-br from-purple-500/20 to-transparent"></div>
-          <div className="absolute -bottom-32 -left-32 w-96 h-96 bg-purple-500 rounded-full opacity-20"></div>
-          <div className="absolute -top-32 -right-32 w-96 h-96 bg-purple-500 rounded-full opacity-20"></div>
+        {/* Sección izquierda con el logo y texto de Facebook, sin cuadros */}
+        <div className="w-1/2 text-left pr-12">
+          <h1 className="text-purple-500 text-8xl font-bold">JobBoard</h1>
+          <p className="text-xl mt-4">
+            Conéctate con amigos y el mundo que te rodea en Facebook.
+          </p>
         </div>
 
-        
-        <div className="w-full md:w-1/2 p-8 md:p-12 space-y-6">
-          <div className="text-center mb-10">
-            <h2 className="text-3xl font-bold text-gray-800 mb-2">Bienvenido de nuevo</h2>
-            <p className="text-gray-600">Ingresa tus credenciales para continuar</p>
-          </div>
-
-          <form onSubmit={handleLogin} className="space-y-6">
-            {error && (
-              <div className="bg-red-50 border-l-4 border-red-500 p-4 rounded-md">
-                <p className="text-red-700">{error}</p>
+        {/* Sección derecha con el formulario dentro de un cuadro */}
+        <div className="w-1/2 flex justify-center">
+          <div className="bg-white p-8 rounded-lg shadow-lg w-full max-w-md">
+            <h2 className="text-2xl font-bold mb-6 text-center text-purple-800">Iniciar sesión</h2>
+            
+            <form onSubmit={handleSubmit}>
+              <div className="mb-4">
+                <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="email">
+                  Correo electrónico
+                </label>
+                <input
+                  id="email"
+                  type="email"
+                  placeholder="Ingresa tu correo"
+                  className="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  required
+                />
               </div>
-            )}
 
-            <div className="space-y-2">
-              <label className="text-sm font-medium text-gray-700" htmlFor="email">
-                Correo electrónico
-              </label>
-              <input
-                id="email"
-                type="email"
-                className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-purple-600 focus:border-transparent transition-all duration-200 ease-in-out"
-                placeholder="tu@email.com"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                required
-              />
-            </div>
+              <div className="mb-4">
+                <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="password">
+                  Contraseña
+                </label>
+                <input
+                  id="password"
+                  type="password"
+                  placeholder="Ingresa tu contraseña"
+                  className="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                  value={password}
+                  onChange={(e) => setPassword(e.target.value)}
+                  required
+                />
+              </div>
 
-            <div className="space-y-2">
-              <label className="text-sm font-medium text-gray-700" htmlFor="password">
-                Contraseña
-              </label>
-              <input
-                id="password"
-                type="password"
-                className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-purple-600 focus:border-transparent transition-all duration-200 ease-in-out"
-                placeholder="••••••••"
-                value={password}
-                onChange={(e) => setPassword(e.target.value)}
-                required
-              />
-            </div>
+              {/* Mostrar el mensaje de error si las credenciales no son válidas */}
+              {error && <p className="text-red-500 text-sm mb-4">{error}</p>}
 
-            <div className="flex items-center justify-between">
-              <label className="flex items-center">
-                <input type="checkbox" className="w-4 h-4 text-purple-600 border-gray-300 rounded focus:ring-purple-500" />
-                <span className="ml-2 text-sm text-gray-600">Recordarme</span>
-              </label>
-              <a href="#" className="text-sm text-purple-600 hover:text-purple-500">
-                ¿Olvidaste tu contraseña?
-              </a>
-            </div>
-
-            <button
-              type="submit"
-              disabled={isLoading}
-              className={`w-full py-3 px-4 rounded-lg text-white font-medium 
-                ${isLoading 
-                  ? 'bg-purple-400 cursor-not-allowed' 
-                  : 'bg-purple-600 hover:bg-purple-700 active:bg-purple-800'
-                } 
-                transition-all duration-200 ease-in-out transform hover:scale-[1.02]`}
-            >
-              {isLoading ? (
-                <span className="flex items-center justify-center">
-                  <svg className="animate-spin -ml-1 mr-3 h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
-                    <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
-                    <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
-                  </svg>
-                  Iniciando sesión...
-                </span>
-              ) : (
-                'Iniciar sesión'
-              )}
-            </button>
-
-            <div className="mt-6 text-center">
-              <p className="text-gray-600">
-                ¿No tienes una cuenta?{' '}
-                <a href="#" className="text-purple-600 hover:text-purple-500 font-medium">
-                  Regístrate aquí
-                </a>
-              </p>
-            </div>
-          </form>
+              <div className="flex justify-center">
+                <button
+                  type="submit"
+                  className="w-full bg-purple-500 text-white font-semibold py-2 px-4 rounded-md shadow-lg hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-opacity-50"
+                >
+                  Iniciar sesión
+                </button>
+              </div>
+            </form>
+          </div>
         </div>
-      </div>
-    </div>
+     </div>
+     </div>
   );
 }

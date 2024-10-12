@@ -56,11 +56,10 @@ export default function Cartas() {
             <div className="max-w-sm rounded overflow-hidden shadow-lg bg-white p-4">
               <img className="rounded-lg p-2 h-20 w-20"
                 src={produc.imagen_url} alt="icon1" />
-                
-                <button className="hover:bg-[#6c67f97e] text-gray-500 font-bold py-1 px-2 rounded">
+                <button className="hover:text-blue-400 text-gray-500 font-bold py-1 px-4">
                  ...
                 </button>
-              <div className="px-4 py-4">
+                <div className="px-4 py-4">
                 <div className="font-bold text-xl mb-2">{produc.titulo}</div>
                 <p className="text-gray-700 text-base">
                   {produc.descripcion}
