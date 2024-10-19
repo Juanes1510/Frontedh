@@ -3,6 +3,8 @@
 import '../globals.css';
 import { useRouter } from 'next/navigation';
 import React, { useState } from 'react';
+import { cookies } from 'next/headers'
+import { createCookie } from '@/hooks/cokies';
 
 export default function Login() {
   const [email, setEmail] = useState('');
@@ -17,7 +19,7 @@ export default function Login() {
 
     if (email === validEmail && password === validPassword) {
       setError('');
-      localStorage.setItem('token', '1141234124123')
+      createCookie("token","jjhjjjh") 
       router.push('/');
     } else {
       setError('Email o contraseña incorrectos');
