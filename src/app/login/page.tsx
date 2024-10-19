@@ -12,14 +12,14 @@ export default function Login() {
   const [error, setError] = useState('');
   const router = useRouter();
 
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     const validEmail = 'user@example.com';
     const validPassword = '123456';
 
     if (email === validEmail && password === validPassword) {
       setError('');
-      createCookie("token","jjhjjjh") 
+      await createCookie("token","token valido") 
       router.push('/');
     } else {
       setError('Email o contraseña incorrectos');
