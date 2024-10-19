@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import { BriefcaseIcon, BuildingOfficeIcon, CurrencyDollarIcon, StarIcon } from '@heroicons/react/24/outline';
+import { BriefcaseIcon, BuildingOfficeIcon, CurrencyDollarIcon, StarIcon, MagnifyingGlassIcon, Bars3Icon } from '@heroicons/react/24/outline';
 
 const Header = () => {
   return (
@@ -14,26 +14,26 @@ const Header = () => {
             </Link>
           </div>
           <nav className="hidden md:flex space-x-8">
-            <Link href="/jobs" className="flex items-center space-x-2 text-white hover:text-yellow-300 transition duration-150 ease-in-out">
-              <BriefcaseIcon className="h-5 w-5" />
-              <span className="font-medium">DashBoard</span>
-            </Link>
-
-            <Link href="/companies" className="flex items-center space-x-2 text-white hover:text-yellow-300 transition duration-150 ease-in-out">
-              <BuildingOfficeIcon className="h-5 w-5" />
-              <span className="font-medium">compañia</span>
-            </Link>
-            <Link href="/salaries" className="flex items-center space-x-2 text-white hover:text-yellow-300 transition duration-150 ease-in-out">
-              <CurrencyDollarIcon className="h-5 w-5" />
-              <span className="font-medium">Salaries</span>
-            </Link>
-            <Link href="/reviews" className="flex items-center space-x-2 text-white hover:text-yellow-300 transition duration-150 ease-in-out">
-              <StarIcon className="h-5 w-5" />
-              <span className="font-medium">Reviews</span>
-            </Link>
+            {[
+              { href: '/jobs', icon: BriefcaseIcon, label: 'Dashboard' },
+              { href: '/companies', icon: BuildingOfficeIcon, label: 'Compañía' },
+              { href: '/salaries', icon: CurrencyDollarIcon, label: 'Salaries' },
+              { href: '/reviews', icon: StarIcon, label: 'Reviews' },
+            ].map(({ href, icon: Icon, label }) => (
+              <Link key={href} href={href} className="flex items-center space-x-2 text-white hover:text-yellow-300 transition duration-150 ease-in-out">
+                <Icon className="h-5 w-5" aria-hidden="true" />
+                <span className="font-medium">{label}</span>
+              </Link>
+            ))}
           </nav>
-          <div className="flex items-center space-x-4">
-            <button className="bg-yellow-400 text-blue-900 px-4 py-2 rounded-full font-bold hover:bg-yellow-300 transition duration-150 ease-in-out shadow-md">
+          <div className="md:hidden">
+            <button className="text-white p-2" aria-label="Open menu">
+              <Bars3Icon className="h-6 w-6" />
+            </button>
+          </div>
+          <div className="hidden md:flex items-center space-x-4">
+            <button className="bg-yellow-400 text-blue-900 px-4 py-2 rounded-full font-bold hover:bg-yellow-300 transition duration-150 ease-in-out shadow-md flex items-center">
+              <MagnifyingGlassIcon className="h-5 w-5 mr-2" />
               Search
             </button>
             <div className="flex items-center space-x-3 bg-white bg-opacity-20 rounded-full py-2 px-4">
