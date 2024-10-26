@@ -2,9 +2,15 @@ import React, { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { BriefcaseIcon, BuildingOfficeIcon, CurrencyDollarIcon, StarIcon, MagnifyingGlassIcon, Bars3Icon } from '@heroicons/react/24/outline';
+import { deleteCookie } from '@/hooks/cokies';
 
 const Header = () => {
-  const [mostrarMenu , setMostrarMenu] = useState<boolean>(false)
+  const [mostrarMenu, setMostrarMenu] = useState<boolean>(false)
+
+  const Logout = async () => {
+    await deleteCookie('token')
+
+  }
   return (
     <header className="bg-gradient-to-r from-blue-500 to-purple-600 text-white shadow-lg">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -56,17 +62,17 @@ const Header = () => {
               </div>
             </div>
             <div className="relative" >
-            <button onClick={() => {setMostrarMenu(!mostrarMenu)}} className="text-white p-2" aria-label="Open menu">
-              <Bars3Icon className="h-6 w-6" />
-            </button>
-          <div id='menu' className={`${!mostrarMenu ? "hidden" : "absolute"} mt-2 w-48 bg-white rounded-lg shadow-lg`}>
-              <ul className='py-2'>
-                <li><a href="#" className=' items-center block px-4 py-2 text-gray-700 hover:bg-gray-100'>Notifications</a></li>
-                <li><a href="#" className=' items-center block px-4 py-2 text-gray-700 hover:bg-gray-100'>Configuration</a></li>
-                <li><a href="#" className=' items-center block px-4 py-2 text-gray-700 hover:bg-gray-100'>Log Out</a></li>
-              </ul>
+              <button onClick={() => { setMostrarMenu(!mostrarMenu) }} className="text-white p-2" aria-label="Open menu">
+                <Bars3Icon className="h-6 w-6" />
+              </button>
+              <div id='menu' className={`${!mostrarMenu ? "hidden" : "absolute"} mt-2 w-48 bg-white rounded-lg shadow-lg`}>
+                <ul className='py-2'>
+                  <li><a href="#" className=' items-center block px-4 py-2 text-gray-700 hover:bg-gray-100'>Notifications</a></li>
+                  <li><a href="#" className=' items-center block px-4 py-2 text-gray-700 hover:bg-gray-100'>Configuration</a></li>
+                  <li onClick={Logout}><a href="/login" className=' items-center block px-4 py-2 text-gray-700 hover:bg-gray-100'>Log Out</a></li>
+                </ul>
+              </div>
             </div>
-          </div>
           </div>
         </div>
       </div>
