@@ -1,9 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { BriefcaseIcon, BuildingOfficeIcon, CurrencyDollarIcon, StarIcon, MagnifyingGlassIcon, Bars3Icon } from '@heroicons/react/24/outline';
 
 const Header = () => {
+  const [mostrarMenu , setMostrarMenu] = useState<boolean>(false)
   return (
     <header className="bg-gradient-to-r from-blue-500 to-purple-600 text-white shadow-lg">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -30,6 +31,13 @@ const Header = () => {
             <button className="text-white p-2" aria-label="Open menu">
               <Bars3Icon className="h-6 w-6" />
             </button>
+            <div id='menu' className={`${!mostrarMenu ? "hidden" : "absolute"} mt-2 w-48 bg-white rounded-lg shadow-lg`}>
+              <ul className='py-2'>
+                <li><a href="#" className=' items-center block px-4 py-2 text-gray-700 hover:bg-gray-100'>Notifications</a></li>
+                <li><a href="#" className=' items-center block px-4 py-2 text-gray-700 hover:bg-gray-100'>Configuration</a></li>
+                <li><a href="#" className=' items-center block px-4 py-2 text-gray-700 hover:bg-gray-100'>Log Out</a></li>
+              </ul>
+            </div>
           </div>
           <div className="hidden md:flex items-center space-x-4">
             <button className="bg-yellow-400 text-blue-900 px-4 py-2 rounded-full font-bold hover:bg-yellow-300 transition duration-150 ease-in-out shadow-md flex items-center">
@@ -47,6 +55,18 @@ const Header = () => {
                 />
               </div>
             </div>
+            <div className="relative" >
+            <button onClick={() => {setMostrarMenu(!mostrarMenu)}} className="text-white p-2" aria-label="Open menu">
+              <Bars3Icon className="h-6 w-6" />
+            </button>
+          <div id='menu' className={`${!mostrarMenu ? "hidden" : "absolute"} mt-2 w-48 bg-white rounded-lg shadow-lg`}>
+              <ul className='py-2'>
+                <li><a href="#" className=' items-center block px-4 py-2 text-gray-700 hover:bg-gray-100'>Notifications</a></li>
+                <li><a href="#" className=' items-center block px-4 py-2 text-gray-700 hover:bg-gray-100'>Configuration</a></li>
+                <li><a href="#" className=' items-center block px-4 py-2 text-gray-700 hover:bg-gray-100'>Log Out</a></li>
+              </ul>
+            </div>
+          </div>
           </div>
         </div>
       </div>
