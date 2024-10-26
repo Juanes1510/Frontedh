@@ -4,6 +4,7 @@ import { useRouter } from 'next/navigation';
 import React, { useState } from 'react';
 import { cookies } from 'next/headers'
 import { createCookie } from '@/hooks/cokies';
+import { url } from 'inspector';
 
 export default function Login() {
   const [email, setEmail] = useState('');
@@ -20,7 +21,7 @@ export default function Login() {
 
     if (email === validEmail && password === validPassword) {
       setError('');
-      createCookie("token","jjhjjjh") 
+      createCookie("token","jjhjjjh.lkjhgf.lkjhgfd") 
       router.push('/');
     } else {
       setError('Email o contraseña incorrectos');
@@ -29,21 +30,19 @@ export default function Login() {
 
   return (
     <div className="flex min-h-screen justify-center items-center bg-gray-100">
-      {/* Contenedor principal con flex para dividir el contenido */}
       <div className="flex items-center w-10/12 max-w-6xl">
-
-        {/* Sección izquierda con el logo y texto de Facebook, sin cuadros */}
-        <div className="w-1/2 text-left pr-12">
+        <div className="w-1/2 p-10">
           <h1 className="text-purple-500 text-8xl font-bold">JobBoard</h1>
           <p className="text-xl mt-4">
             Conéctate con amigos y el mundo que te rodea.
           </p>
         </div>
 
-        {/* Sección derecha con el formulario dentro de un cuadro */}
-        <div className="w-1/2 flex justify-center">
+        <div className="w-1/2 flex items-center justify-center p-10">
           <div className="bg-white p-8 rounded-lg shadow-lg w-full max-w-md">
-            <h2 className="text-2xl font-bold mb-6 text-center text-purple-800">Iniciar sesión</h2>
+            <h2 className="text-2xl font-bold mb-6 text-center text-purple-800">
+              Iniciar sesión
+            </h2>
 
             <form onSubmit={handleSubmit}>
               <div className="mb-4">
